@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlante Systems</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            background:#0b1020;
+            color:white;
+            line-height:1.6;
+        }
+
+        header{
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:2rem;
+            background:
+                radial-gradient(circle at top,#1f4cff 0%,#0b1020 55%);
+        }
+
+        .logo{
+            width:140px;
+            height:140px;
+            border-radius:50%;
+            border:3px solid #4da3ff;
+            margin-bottom:2rem;
+            background-image:url("logo.png");
+            background-size:cover;
+            background-position:center;
+            box-shadow:0 0 30px rgba(77,163,255,.4);
+        }
+
+        h1{
+            font-size:4rem;
+            margin-bottom:.5rem;
+            letter-spacing:2px;
+        }
+
+        .subtitle{
+            color:#8fb9ff;
+            font-size:1.3rem;
+            margin-bottom:2rem;
+        }
+
+        .hero-buttons{
+            display:flex;
+            gap:1rem;
+            flex-wrap:wrap;
+        }
+
+        .btn{
+            padding:14px 30px;
+            text-decoration:none;
+            border-radius:8px;
+            transition:.3s;
+            font-weight:bold;
+        }
+
+        .btn-primary{
+            background:#4da3ff;
+            color:white;
+        }
+
+        .btn-primary:hover{
+            background:#69b2ff;
+            transform:translateY(-2px);
+        }
+
+        .btn-secondary{
+            border:2px solid #4da3ff;
+            color:#4da3ff;
+        }
+
+        .btn-secondary:hover{
+            background:#4da3ff;
+            color:white;
+        }
+
+        section{
+            max-width:1200px;
+            margin:auto;
+            padding:5rem 2rem;
+        }
+
+        h2{
+            font-size:2.2rem;
+            margin-bottom:2rem;
+            color:#4da3ff;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:2rem;
+        }
+
+        .card{
+            background:#121930;
+            padding:2rem;
+            border-radius:16px;
+            border:1px solid rgba(255,255,255,.07);
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+            border-color:#4da3ff;
+        }
+
+        .card h3{
+            margin-bottom:1rem;
+            color:#4da3ff;
+        }
+
+        footer{
+            text-align:center;
+            padding:3rem 1rem;
+            color:#9da6c4;
+            border-top:1px solid rgba(255,255,255,.08);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo"></div>
+
+    <h1>ATLANTE SYSTEMS</h1>
+
+    <p class="subtitle">
+        Software Development • Business Solutions • Technical Consulting
+    </p>
+
+    <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+            View Projects
+        </a>
+
+        <a href="https://github.com/Atlante-Systems"
+           class="btn btn-secondary">
+           GitHub
+        </a>
+    </div>
+
+</header>
+
+<section id="about">
+
+    <h2>About</h2>
+
+    <p>
+        Atlante Systems develops practical software solutions that solve
+        real-world problems. Our focus is on business tools,
+        process automation, desktop applications, and custom systems that
+        improve efficiency and productivity.
+    </p>
+
+</section>
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🧶 Tilligurumi Suite</h3>
+
+            <p>
+                ERP-style management software designed for handmade and
+                amigurumi businesses.
+            </p>
+
+            <br>
+
+            <ul>
+                <li>Inventory Management</li>
+                <li>Project Tracking</li>
+                <li>Commission Management</li>
+                <li>Material Cost Analysis</li>
+                <li>Cloud Synchronisation</li>
+                <li>Offline Functionality</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Future Projects</h3>
+
+            <p>
+                Atlante Systems is actively developing new software tools
+                and business solutions.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+        For enquiries, collaboration opportunities or software support,
+        please contact Atlante Systems via GitHub.
+    </p>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Atlante Systems. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
