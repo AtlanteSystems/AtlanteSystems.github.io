@@ -1,254 +1,259 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlante Systems</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlante Systems</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Segoe UI',sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
 
-        body{
-            background:#0b1020;
-            color:white;
-            line-height:1.6;
-        }
+body{
+    background:#0b1020;
+    color:white;
+    line-height:1.6;
+}
 
-        header{
-            min-height:100vh;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-            padding:2rem;
-            background:
-                radial-gradient(circle at top,#1f4cff 0%,#0b1020 55%);
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:2rem;
+    background:
+    radial-gradient(circle at top,#1f4cff 0%,#0b1020 55%);
+}
 
-        }
+.logo{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:3px solid #4da3ff;
+    margin-bottom:2rem;
+    background-image:url("logo.png");
+    background-size:cover;
+    background-position:center;
+    box-shadow:0 0 30px rgba(77,163,255,.4);
+}
 
-        .logo{
-            width:140px;
-            height:140px;
-            border-radius:50%;
-            border:3px solid #4da3ff;
-            margin-bottom:2rem;
-            background-image:url("logo.png");
-            background-size:cover;
-            background-position:center;
-            box-shadow:0 0 30px rgba(77,163,255,.4);
-        }
+.language-switch{
+    position:absolute;
+    top:20px;
+    right:20px;
+}
 
-        h1{
-            font-size:4rem;
-            margin-bottom:.5rem;
-            letter-spacing:2px;
-        }
+.language-switch a{
+    color:white;
+    text-decoration:none;
+    margin-left:10px;
+    padding:8px 12px;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:8px;
+    transition:.3s;
+}
 
-        .subtitle{
-            color:#8fb9ff;
-            font-size:1.3rem;
-            margin-bottom:2rem;
-        }
+.language-switch a:hover{
+    background:rgba(255,255,255,.15);
+}
 
-        .hero-buttons{
-            display:flex;
-            gap:1rem;
-            flex-wrap:wrap;
-        }
+h1{
+    font-size:4rem;
+    margin-bottom:.5rem;
+    letter-spacing:2px;
+}
 
-        .btn{
-            padding:14px 30px;
-            text-decoration:none;
-            border-radius:8px;
-            transition:.3s;
-            font-weight:bold;
-        }
+.subtitle{
+    color:#8fb9ff;
+    font-size:1.3rem;
+    margin-bottom:2rem;
+}
 
-        .btn-primary{
-            background:#4da3ff;
-            color:white;
-        }
+.hero-buttons{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+}
 
-        .btn-primary:hover{
-            background:#69b2ff;
-            transform:translateY(-2px);
-        }
+.btn{
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:bold;
+}
 
-        .btn-secondary{
-            border:2px solid #4da3ff;
-            color:#4da3ff;
-        }
+.btn-primary{
+    background:#4da3ff;
+    color:white;
+}
 
-        .btn-secondary:hover{
-            background:#4da3ff;
-            color:white;
-        }
+.btn-primary:hover{
+    background:#69b2ff;
+    transform:translateY(-2px);
+}
 
-        section{
-            max-width:1200px;
-            margin:auto;
-            padding:5rem 2rem;
-        }
+.btn-secondary{
+    border:2px solid #4da3ff;
+    color:#4da3ff;
+}
 
-        h2{
-            font-size:2.2rem;
-            margin-bottom:2rem;
-            color:#4da3ff;
-        }
+.btn-secondary:hover{
+    background:#4da3ff;
+    color:white;
+}
 
-        .cards{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-            gap:2rem;
-        }
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:5rem 2rem;
+}
 
-        .card{
-            background:#121930;
-            padding:2rem;
-            border-radius:16px;
-            border:1px solid rgba(255,255,255,.07);
-            transition:.3s;
-        }
+h2{
+    font-size:2.2rem;
+    margin-bottom:2rem;
+    color:#4da3ff;
+}
 
-        .card:hover{
-            transform:translateY(-5px);
-            border-color:#4da3ff;
-        }
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:2rem;
+}
 
-        .card h3{
-            margin-bottom:1rem;
-            color:#4da3ff;
-        }
+.card{
+    background:#121930;
+    padding:2rem;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.07);
+    transition:.3s;
+}
 
-        footer{
-            text-align:center;
-            padding:3rem 1rem;
-            color:#9da6c4;
-            border-top:1px solid rgba(255,255,255,.08);
-           .language-switch{
-            position:absolute;
-            top:20px;
-            right:20px;
-           }
-           .language-switch a{
-            color:white;
-            text-decoration:none;
-            margin-left:10px;
-            padding:8px 12px;
-            border:1px solid rgba(255,255,255,.2);
-            border-radius:8px;
-            transition:.3s;
-           }
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#4da3ff;
+}
 
-           .language-switch a:hover{
-            background:rgba(255,255,255,.15);
-           }
-        }
-    </style>
+.card h3{
+    margin-bottom:1rem;
+    color:#4da3ff;
+}
+
+footer{
+    text-align:center;
+    padding:3rem 1rem;
+    color:#9da6c4;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+</style>
 </head>
 
 <body>
 
 <header>
 
-    <div class="logo"></div>
+<div class="language-switch">
+    <a href="index.html">🇬🇧 English</a>
+    <a href="index-es.html">🇪🇸 Español</a>
+</div>
 
-    <h1>ATLANTE SYSTEMS</h1>
+<div class="logo"></div>
 
-    <p class="subtitle">
-        TConvirtiendo Ideas En Soluciones
-    </p>
+<h1>ATLANTE SYSTEMS</h1>
 
-    <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">
-            Ver Proyectos
-        </a>
+<p class="subtitle">
+Convirtiendo Ideas en Soluciones
+</p>
 
-        <a href="https://github.com/Atlante-Systems"
-           class="btn btn-secondary">
-           GitHub
-        </a>
-    </div>
+<div class="hero-buttons">
+    <a href="#projects" class="btn btn-primary">
+        Ver Proyectos
+    </a>
+
+    <a href="https://github.com/Atlante-Systems" class="btn btn-secondary">
+        GitHub
+    </a>
+</div>
 
 </header>
 
 <section id="about">
 
-    <h2>Sobre Nosotros</h2>
+<h2>Sobre Nosotros</h2>
 
-    <p>
-        Atlante Systems combina consultoría IT, desarrollo de software
-        e innovación tecnológica para crear soluciones prácticas, accesibles
-        y adaptadas a las necesidades reales de empresas y particulares.
-        Nuestros proyectos abarcan software de gestión empresarial,
-        automatización, aplicaciones de escritorio, plugins y
-        modificaciones para videojuegos, así como sistemas personalizados
-        diseñados para resolver problemas reales.
-    </p>
+<p>
+Atlante Systems combina consultoría IT, desarrollo de software e innovación tecnológica
+para crear soluciones prácticas, accesibles y adaptadas
+a las necesidades reales de empresas y particulares.
+Nuestros proyectos abarcan software de gestión empresarial, automatización,
+aplicaciones de escritorio, plugins y modificaciones para videojuegos,
+así como sistemas personalizados diseñados para resolver problemas reales.
+</p>
 
 </section>
 
 <section id="projects">
 
-    <h2>Proyectos</h2>
+<h2>Proyectos</h2>
 
-    <div class="cards">
+<div class="cards">
 
-        <div class="card">
-            <h3>🧶 Tilligurumi Suite</h3>
+<div class="card">
+    <h3>🧶 Tilligurumi Suite</h3>
 
-            <p>
-                Sofware de planificación de recursos empresariales diseñado para
-                productos hechos a mano.
-            </p>
+    <p>
+    Software de gestión empresarial diseñado para
+	negocios artesanales y productos hechos a mano.
+    </p>
 
-            <br>
+    <br>
 
-            <ul>
-                <li>Gestión de Inventario</li>
-                <li>Seguimiento de Proyectos</li>
-                <li>Gestión de Pedidos</li>
-                <li>Análisis del Coste de Materiales</li>
-                <li>Sincronización con la Nube</li>
-                <li>Funcionalidad Offline</li>
-            </ul>
-        </div>
+    <ul>
+        <li>Gestión de Inventario</li>
+        <li>Seguimiento de Proyectos</li>
+        <li>Gestión de Pedidos</li>
+        <li>Análisis de Costes</li>
+        <li>Sincronización en la Nube</li>
+        <li>Funcionalidad Offline</li>
+    </ul>
+</div>
 
-        <div class="card">
-            <h3>🚀 Proyectos Futuros</h3>
+<div class="card">
+    <h3>🚀 Proyectos Futuros</h3>
 
-            <p>
-                Atlante Systems se encuentra desarrollando diferentes proyectos
-                para el futuro de los negocios empresariales.
-            </p>
-        </div>
+    <p>
+    Atlante Systems desarrolla continuamente
+	nuevas herramientas de software, soluciones empresariales
+	y proyectos tecnológicos innovadores.
+    </p>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 <section id="contact">
 
-    <h2>Contacto</h2>
+<h2>Contacto</h2>
 
-    <p>
-        Para consultas, colaboraciones o soporte de software,
-        contacte con Atlante Systems a través de GitHub.
-    </p>
+<p>
+Para consultas, colaboraciones o soporte técnico,
+contacte con Atlante Systems a través de GitHub.
+</p>
 
 </section>
 
 <footer>
 
-    <p>
-        © 2026 Atlante Systems. All Rights Reserved.
-    </p>
+<p>
+© 2026 Atlante Systems. Todos los derechos reservados.
+</p>
 
 </footer>
 
