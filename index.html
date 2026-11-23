@@ -1,258 +1,198 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atlante Systems</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
-}
+<title>Atlante Systems | IT Consultancy &amp; Custom Software</title>
+<meta name="description" content="Atlante Systems is an IT consultancy and software studio. We build business software, automation, desktop apps, game plugins and bespoke systems around the way you work.">
+<meta name="theme-color" content="#0b1020">
+<meta name="color-scheme" content="dark">
 
-body{
-    background:#0b1020;
-    color:white;
-    line-height:1.6;
-}
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="alternate" hreflang="es" href="index-es.html">
+<link rel="alternate" hreflang="x-default" href="index.html">
 
-header{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:2rem;
-    background:
-    radial-gradient(circle at top,#1f4cff 0%,#0b1020 55%);
-}
+<!-- Link previews (WhatsApp, LinkedIn, Discord...).
+     Once the site is online, change og:image to the full address, e.g. https://your-site.com/og-image.png -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atlante Systems">
+<meta property="og:title" content="Atlante Systems | IT Consultancy &amp; Custom Software">
+<meta property="og:description" content="Business software, automation, desktop apps, game plugins and bespoke systems built around the way you work.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
 
-.logo{
-    width:140px;
-    height:140px;
-    border-radius:50%;
-    border:3px solid #4da3ff;
-    margin-bottom:2rem;
-    background-image:url("logo.png");
-    background-size:cover;
-    background-position:center;
-    box-shadow:0 0 30px rgba(77,163,255,.4);
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Atlante Systems",
+  "description": "IT consultancy and software development: business management software, automation, desktop applications, game plugins and bespoke systems.",
+  "sameAs": ["https://github.com/Atlante-Systems"]
 }
+</script>
 
-.language-switch{
-    position:absolute;
-    top:20px;
-    right:20px;
-}
-
-.language-switch a{
-    color:white;
-    text-decoration:none;
-    margin-left:10px;
-    padding:8px 12px;
-    border:1px solid rgba(255,255,255,.2);
-    border-radius:8px;
-    transition:.3s;
-}
-
-.language-switch a:hover{
-    background:rgba(255,255,255,.15);
-}
-
-h1{
-    font-size:4rem;
-    margin-bottom:.5rem;
-    letter-spacing:2px;
-}
-
-.subtitle{
-    color:#8fb9ff;
-    font-size:1.3rem;
-    margin-bottom:2rem;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:1rem;
-    flex-wrap:wrap;
-}
-
-.btn{
-    padding:14px 30px;
-    text-decoration:none;
-    border-radius:8px;
-    transition:.3s;
-    font-weight:bold;
-}
-
-.btn-primary{
-    background:#4da3ff;
-    color:white;
-}
-
-.btn-primary:hover{
-    background:#69b2ff;
-    transform:translateY(-2px);
-}
-
-.btn-secondary{
-    border:2px solid #4da3ff;
-    color:#4da3ff;
-}
-
-.btn-secondary:hover{
-    background:#4da3ff;
-    color:white;
-}
-
-section{
-    max-width:1200px;
-    margin:auto;
-    padding:5rem 2rem;
-}
-
-h2{
-    font-size:2.2rem;
-    margin-bottom:2rem;
-    color:#4da3ff;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:2rem;
-}
-
-.card{
-    background:#121930;
-    padding:2rem;
-    border-radius:16px;
-    border:1px solid rgba(255,255,255,.07);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    border-color:#4da3ff;
-}
-
-.card h3{
-    margin-bottom:1rem;
-    color:#4da3ff;
-}
-
-footer{
-    text-align:center;
-    padding:3rem 1rem;
-    color:#9da6c4;
-    border-top:1px solid rgba(255,255,255,.08);
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<div class="language-switch">
-    <a href="index.html">🇬🇧 English</a>
-    <a href="index-es.html">🇪🇸 Español</a>
-</div>
-
-<div class="logo"></div>
-
-<h1>ATLANTE SYSTEMS</h1>
-
-<p class="subtitle">
-Turning Ideas Into Solutions
-</p>
-
-<div class="hero-buttons">
-    <a href="#projects" class="btn btn-primary">
-        View Projects
+<header class="site-header">
+  <nav class="nav" aria-label="Main menu">
+    <a class="brand" href="#top">
+      <img src="logo.png" alt="" width="34" height="34">
+      <span>Atlante Systems</span>
     </a>
 
-    <a href="https://github.com/Atlante-Systems" class="btn btn-secondary">
-        GitHub
-    </a>
-</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
+    <div class="lang-switch" role="group" aria-label="Language">
+      <a href="index.html" hreflang="en" lang="en" aria-current="page">English</a>
+      <a href="index-es.html" hreflang="es" lang="es">Español</a>
+    </div>
+  </nav>
 </header>
 
-<section id="about">
+<main id="main">
 
-<h2>About</h2>
+  <section class="hero" id="top">
+    <img class="hero-logo" src="logo.png" alt="Atlante Systems logo" width="150" height="150" fetchpriority="high">
 
-<p>
-		Atlante Systems combines IT consultancy, software development, and technical innovation 
-        to create solutions that make technology simpler, more accessible, and more useful. 
-        Our projects span business management software, automation, desktop applications, 
-        game plugins and modifications, and bespoke systems
-        designed around the unique needs of every client.
-</p>
+    <h1>ATLANTE SYSTEMS</h1>
+    <p class="subtitle">Turning Ideas Into Solutions</p>
+    <p class="lead">IT consultancy and custom software, built around the way you work.</p>
 
-</section>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+    </div>
+  </section>
 
-<section id="projects">
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p class="about-text">
+        Atlante Systems combines IT consultancy, software development and technical innovation
+        to create solutions that make technology simpler, more accessible and more useful.
+        Our work spans business management software, automation, desktop applications,
+        game plugins and modifications, and bespoke systems designed around the unique
+        needs of every client.
+      </p>
+    </div>
+  </section>
 
-<h2>Projects</h2>
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="section-intro">
+        Whether you need advice, a tool built from scratch or a repetitive job taken off your hands,
+        we can help.
+      </p>
 
-<div class="cards">
+      <div class="cards">
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">💡</span>
+          <h3>IT Consultancy</h3>
+          <p>Practical advice on the tools and systems that fit your business, explained in plain language.</p>
+        </article>
 
-<div class="card">
-    <h3>🧶 Tilligurumi Suite</h3>
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">🛠️</span>
+          <h3>Custom Software</h3>
+          <p>Business management software, desktop applications and bespoke systems designed around your processes.</p>
+        </article>
 
-    <p>
-		ERP-style management software designed for handmade and
-        amigurumi businesses.
-    </p>
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">⚙️</span>
+          <h3>Automation</h3>
+          <p>Taking repetitive, error-prone tasks off your plate so your time goes where it matters.</p>
+        </article>
 
-    <br>
+        <article class="card">
+          <span class="card-icon" aria-hidden="true">🎮</span>
+          <h3>Game Plugins &amp; Mods</h3>
+          <p>Plugins and modifications that extend and customise the games your community plays.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <ul>
-        <li>Inventory Management</li>
-        <li>Proejct Tracking</li>
-        <li>Commissions Management</li>
-        <li>Material Costs Management</li>
-        <li>Cloud Sinchronisation</li>
-        <li>Offline Functionality</li>
-    </ul>
-</div>
+  <section class="section" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
 
-<div class="card">
-    <h3>🚀 Future Projects</h3>
+      <div class="projects">
+        <article class="card">
+          <h3>🧶 Tilligurumi Suite</h3>
+          <p>
+            All-in-one business software for handmade makers and amigurumi businesses:
+            know what every project really costs, and what every order really earns.
+          </p>
 
-    <p>
-		Atlante Systems is actively developing new software tools
-        and business solutions.
-    </p>
-</div>
+          <ul class="chips">
+            <li>Inventory management</li>
+            <li>Project tracking</li>
+            <li>Commissions management</li>
+            <li>Material costs &amp; profit per order</li>
+            <li>Price calculator</li>
+            <li>Cloud synchronisation</li>
+            <li>Offline functionality</li>
+            <li>Daily backups</li>
+          </ul>
 
-</div>
+          <figure class="shot">
+            <img src="tilligurumi-dashboard.png" alt="Tilligurumi Suite dashboard showing orders, stock warnings and profit per order" width="1200" height="800" loading="lazy">
+          </figure>
 
-</section>
+          <div class="card-actions">
+            <a class="btn btn-secondary" href="mailto:atlantesystemsofficial@gmail.com?subject=Tilligurumi%20Suite%20enquiry">Ask about Tilligurumi Suite</a>
+          </div>
+        </article>
 
-<section id="contact">
+        <article class="card">
+          <h3>🚀 Future Projects</h3>
+          <p>
+            Atlante Systems is actively developing new software tools and business solutions.
+            Have an idea that should exist? Let's talk.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<h2>Contact</h2>
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <p class="about-text">
+          For enquiries, collaboration opportunities or software support, send us a message.
+          We'd love to hear what you're working on.
+        </p>
 
-<p>
-        For enquiries, collaboration opportunities or software support,
-        please contact Atlante Systems via GitHub.
-</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:atlantesystemsofficial@gmail.com">Email Us</a>
+          <a class="btn btn-secondary" href="https://github.com/Atlante-Systems">GitHub</a>
+        </div>
 
-</section>
+        <p class="contact-email">atlantesystemsofficial@gmail.com</p>
+      </div>
+    </div>
+  </section>
 
-<footer>
+</main>
 
-<p>
-© 2026 Atlante Systems. All rights reserved.
-</p>
-
+<footer class="site-footer">
+  <p>© 2026 Atlante Systems. All rights reserved. · <a href="#top">Back to top</a></p>
 </footer>
 
 </body>
