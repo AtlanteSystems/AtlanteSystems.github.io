@@ -302,3 +302,26 @@ h2 {
   *, *::before, *::after { transition: none !important; }
   .card:hover, .card:focus-within, .btn-primary:hover { transform: none; }
 }
+
+
+/* ---------- Simple content pages (pricing/legal) ---------- */
+.page-hero { padding-bottom: 2rem; }
+.narrow { max-width: 860px; }
+.eyebrow { color: var(--subtitle); font-size: .85rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .5rem; }
+.prose h2 { font-size: 1.25rem; margin: 1.75rem 0 .5rem; }
+.prose p, .prose li { color: var(--text-soft); }
+.prose ul { list-style: disc; padding-left: 1.25rem; margin: .5rem 0 1rem; }
+.prose a { color: var(--accent); }
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.pricing-card .price { margin: .5rem 0 .25rem; }
+.price-amount { font-size: 2.2rem; font-weight: 800; color: var(--text); }
+.price-period { color: var(--muted); font-size: 1rem; }
+.muted { color: var(--muted); }
+.small { font-size: .9rem; margin-top: .75rem; }
+.check-list { list-style: none; padding: 0; margin: 1.25rem 0; display: grid; gap: .55rem; }
+.check-list li { position: relative; padding-left: 1.5rem; color: var(--text-soft); }
+.check-list li::before { content: "?"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+.footer-grid { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; align-items: center; justify-content: space-between; max-width: var(--maxw); margin: 0 auto; }
+.footer-links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
+.footer-links a { color: var(--text-soft); font-size: .95rem; text-decoration: none; }
+.footer-links a:hover { color: #fff; }
