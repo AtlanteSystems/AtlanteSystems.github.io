@@ -325,3 +325,9 @@ h2 {
 .footer-links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
 .footer-links a { color: var(--text-soft); font-size: .95rem; text-decoration: none; }
 .footer-links a:hover { color: #fff; }
+
+/* Ensure buttons keep their intended colors inside prose/cards */
+.prose a.btn-primary, .prose a.btn-primary:visited { color: var(--bg); }
+.prose a.btn-primary:hover, .prose a.btn-primary:focus-visible { color: var(--bg); }
+.prose a.btn-secondary, .prose a.btn-secondary:visited { color: var(--accent); }
+.prose a.btn-secondary:hover, .prose a.btn-secondary:focus-visible { color: var(--bg); }
