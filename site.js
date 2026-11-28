@@ -3,9 +3,9 @@
   document.documentElement.classList.add('js');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Canvas particle network
-  const canvas = document.getElementById('network');
-  if (canvas) {
+  // Canvas particle network disabled for performance
+  const canvas = null;
+  if (false && canvas) {
     const ctx = canvas.getContext('2d');
     let width = 0, height = 0, particles = [];
     let mouse = { x: -9999, y: -9999 };
