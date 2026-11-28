@@ -42,6 +42,8 @@
 <body>
 
 <a class="skip-link" href="#main">Saltar al contenido</a>
+<div class="orbs" aria-hidden="true"><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div></div>
+<canvas id="network" aria-hidden="true"></canvas>
 
 <header class="site-header">
   <nav class="nav" aria-label="Menú principal">
@@ -80,7 +82,7 @@
     </div>
   </section>
 
-  <section class="section" id="about">
+  <section class="section reveal" id="about">
     <div class="container">
       <h2>Quiénes somos</h2>
       <p class="about-text">
@@ -93,84 +95,74 @@
     </div>
   </section>
 
-  <section class="section section--alt" id="services">
+  <section class="section section--alt reveal" id="services">
     <div class="container">
       <h2>Servicios</h2>
       <p class="section-intro">
         Tanto si necesitas asesoramiento, una herramienta hecha desde cero o quitarte de encima
         una tarea repetitiva, podemos ayudarte.
       </p>
-
       <div class="cards">
-                        <article class="card">
-          <h3>?? Tilligurumi Suite</h3>
-          <p>
-            Software de gestión todo en uno para negocios artesanales y de amigurumi:
-            sabe cuánto cuesta realmente cada proyecto y cuánto gana realmente cada pedido.
-          </p>
-
-          <ul class="chips">
-            <li>Gestión de inventario</li>
-            <li>Seguimiento de proyectos</li>
-            <li>Gestión de encargos</li>
-            <li>Costes de materiales y beneficio por pedido</li>
-            <li>Calculadora de precios</li>
-            <li>Sincronización en la nube</li>
-            <li>Funciona sin conexión</li>
-            <li>Copias de seguridad diarias</li>
-          </ul>
-
-          <figure class="shot">
-            <img src="tilligurumi-dashboard.png" alt="Panel de Tilligurumi Suite con pedidos, avisos de stock y beneficio por pedido" width="1200" height="800" loading="lazy">
-          </figure>
-
-          <div class="card-actions">
-            <a class="btn btn-secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=atlantesystemsofficial@gmail.com&su=Tilligurumi%20Suite%20Enquiry">Pregunta por Tilligurumi Suite</a>
-          </div>
+        <article class="card tilt">
+          <div class="card-icon" aria-hidden="true">??</div>
+          <h3>Consultor?a IT</h3>
+          <p>Asesoramiento pr?ctico sobre las herramientas y sistemas que encajan con tu negocio, explicado con claridad.</p>
         </article>
-
-<article class="card">
-          <h3>?? CRM de Atlante Systems</h3>
-          <p>
-            Un CRM de escritorio para empresas de TI, con Supabase y respaldo local sin conexión.
-            Gestiona clientes, presupuestos/facturas, tareas y plantillas de servicio, con panel,
-            exportaciones, copias de seguridad y sincronización en la nube opcional.
-          </p>
-
-          <ul class="chips">
-            <li>Clientes, historial y campos personalizados</li>
-            <li>Presupuestos y facturas desde plantillas</li>
-            <li>Tareas con tablero y calendario</li>
-            <li>Exportaciones CSV/PDF y adjuntos</li>
-            <li>Nube opcional o modo sin conexión</li>
-            <li>Interfaz en inglés y español</li>
-          </ul>
-
-          <figure class="shot">
-            <img src="atlante.png" alt="Panel del CRM de Atlante Systems con clientes, actividad reciente y próximos plazos" width="1200" height="800" loading="lazy">
-          </figure>
-
-          <div class="card-actions">
-            <a class="btn btn-primary" href="pricing-es.html">Ver precios</a>
-            <a class="btn btn-secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=atlantesystemsofficial@gmail.com&su=Solicitud%20de%20demo%20CRM%20de%20Atlante%20Systems">Solicitar demo</a>
-          </div>
+        <article class="card tilt">
+          <div class="card-icon" aria-hidden="true">???</div>
+          <h3>Software a medida</h3>
+          <p>Software de gesti?n, aplicaciones de escritorio y sistemas a medida dise?ados en torno a tus procesos.</p>
         </article>
-
-        <article class="card">
-          <h3>🚀 Próximos proyectos</h3>
-          <p>
-            Atlante Systems desarrolla activamente nuevas herramientas de software y soluciones para empresas.
-            ¿Tienes una idea que debería existir? Hablemos.
-          </p>
+        <article class="card tilt">
+          <div class="card-icon" aria-hidden="true">??</div>
+          <h3>Automatizaci?n</h3>
+          <p>Quitamos de tu plato las tareas repetitivas y propensas a errores para que tu tiempo vaya donde importa.</p>
+        </article>
+        <article class="card tilt">
+          <div class="card-icon" aria-hidden="true">??</div>
+          <h3>Plugins y mods para juegos</h3>
+          <p>Plugins y modificaciones que ampl?an y personalizan los juegos que juega tu comunidad.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section section--alt" id="contact">
+  <section class="section reveal" id="projects">
+    <div class="container">
+      <h2>Proyectos</h2>
+      <div class="projects">
+        <article class="card tilt">
+          <h3>?? Tilligurumi Suite</h3>
+          <p>Software de gesti?n todo en uno para negocios artesanales y de amigurumi: sabe cu?nto cuesta realmente cada proyecto y cu?nto gana realmente cada pedido.</p>
+          <ul class="chips">
+            <li>Gesti?n de inventario</li><li>Seguimiento de proyectos</li><li>Gesti?n de encargos</li><li>Costes de materiales y beneficio por pedido</li><li>Calculadora de precios</li><li>Sincronizaci?n en la nube</li><li>Funciona sin conexi?n</li><li>Copias de seguridad diarias</li>
+          </ul>
+          <figure class="shot"><img src="tilligurumi-dashboard.png" alt="Panel de Tilligurumi Suite con pedidos, avisos de stock y beneficio por pedido" width="1200" height="800" loading="lazy"></figure>
+          <div class="card-actions"><a class="btn btn-secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=atlantesystemsofficial@gmail.com&su=Consulta%20Tilligurumi%20Suite">Pregunta por Tilligurumi Suite</a></div>
+        </article>
+
+        <article class="card tilt">
+          <h3>?? CRM de Atlante Systems</h3>
+          <p>Un CRM de escritorio para empresas de TI, con Supabase y respaldo local sin conexi?n. Gestiona clientes, presupuestos/facturas, tareas y plantillas de servicio, con panel, exportaciones, copias de seguridad y sincronizaci?n en la nube opcional.</p>
+          <ul class="chips">
+            <li>Clientes, historial y campos personalizados</li><li>Presupuestos y facturas desde plantillas</li><li>Tareas con tablero y calendario</li><li>Exportaciones CSV/PDF y adjuntos</li><li>Nube opcional o modo sin conexi?n</li><li>Interfaz en ingl?s y espa?ol</li>
+          </ul>
+          <figure class="shot"><img src="atlante.png" alt="Panel del CRM de Atlante Systems con clientes, actividad reciente y pr?ximos plazos" width="1200" height="800" loading="lazy"></figure>
+          <div class="card-actions"><a class="btn btn-primary" href="pricing-es.html">Ver precios</a> <a class="btn btn-secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=atlantesystemsofficial@gmail.com&su=Solicitud%20de%20demo%20CRM%20de%20Atlante%20Systems">Solicitar demo</a></div>
+        </article>
+
+        <article class="card tilt">
+          <h3>?? Pr?ximos proyectos</h3>
+          <p>Atlante Systems desarrolla activamente nuevas herramientas de software y soluciones para empresas. ?Tienes una idea que deber?a existir? Hablemos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt reveal" id="contact">
     <div class="container">
       <h2>Contacto</h2>
-      <div class="contact-card">
+      <div class="contact-card cta">
         <p class="about-text">
           Para consultas, oportunidades de colaboración o soporte de software, escríbenos.
           Nos encantará saber en qué estás trabajando.
@@ -201,5 +193,6 @@
   </div>
 </footer>
 
+<script src="site.js" defer></script>
 </body>
 </html>

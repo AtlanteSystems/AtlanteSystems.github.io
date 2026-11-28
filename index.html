@@ -42,6 +42,8 @@
 <body>
 
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="orbs" aria-hidden="true"><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div></div>
+<canvas id="network" aria-hidden="true"></canvas>
 
 <header class="site-header">
   <nav class="nav" aria-label="Main menu">
@@ -67,20 +69,18 @@
 
 <main id="main">
 
-  <section class="hero" id="top">
+  <section class="hero hero-center reveal" id="top">
+    <div class="eyebrow"><span class="pulse"></span> IT consultancy &amp; custom software</div>
     <img class="hero-logo" src="logo.png" alt="Atlante Systems logo" width="150" height="150" fetchpriority="high">
-
-    <h1>ATLANTE SYSTEMS</h1>
-    <p class="subtitle">Turning Ideas Into Solutions</p>
-    <p class="lead">IT consultancy and custom software, built around the way you work.</p>
-
+    <h1>Turning ideas into <span class="grad">real solutions.</span></h1>
+    <p class="lead">IT consultancy and custom software, built around the way you work. We design practical tools, automations and systems that make technology simpler and more useful.</p>
     <div class="hero-buttons">
       <a href="#projects" class="btn btn-primary">View Projects</a>
       <a href="#contact" class="btn btn-secondary">Get in Touch</a>
     </div>
   </section>
 
-  <section class="section" id="about">
+  <section class="section reveal" id="about">
     <div class="container">
       <h2>About</h2>
       <p class="about-text">
@@ -93,7 +93,7 @@
     </div>
   </section>
 
-  <section class="section section--alt" id="services">
+  <section class="section section--alt reveal" id="services">
     <div class="container">
       <h2>Services</h2>
       <p class="section-intro">
@@ -102,7 +102,7 @@
       </p>
 
       <div class="cards">
-                        <article class="card">
+                        <article class="card tilt">
           <h3>?? Tilligurumi Suite</h3>
           <p>
             All-in-one business software for handmade makers and amigurumi businesses:
@@ -129,7 +129,7 @@
           </div>
         </article>
 
-<article class="card">
+<article class="card tilt">
           <h3>?? Atlante Systems CRM</h3>
           <p>
             A desktop CRM for IT businesses, backed by Supabase with an offline SQLite fallback.
@@ -156,7 +156,7 @@
           </div>
         </article>
 
-        <article class="card">
+        <article class="card tilt">
           <h3>?? Future Projects</h3>
           <p>
             Atlante Systems is actively developing new software tools and business solutions.
@@ -167,10 +167,10 @@
     </div>
   </section>
 
-  <section class="section section--alt" id="contact">
+  <section class="section section--alt reveal" id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <div class="contact-card">
+      <div class="contact-card cta">
         <p class="about-text">
           For enquiries, collaboration opportunities or software support, send us a message.
           We'd love to hear what you're working on.
@@ -201,5 +201,6 @@
   </div>
 </footer>
 
+<script src="site.js" defer></script>
 </body>
 </html>
