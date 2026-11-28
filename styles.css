@@ -33,13 +33,8 @@ a:hover{color:#fff}
 .skip-link:focus{top:1rem;color:#06101a}
 
 /* background */
-#network{display:none !important;}
-.orbs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
-.orb{position:absolute;width:52vw;height:52vw;min-width:320px;min-height:320px;border-radius:50%;filter:blur(48px);opacity:.16;transform:translateZ(0)}
-.orb.one{background:#1d6bff;top:-18%;left:-12%}
-.orb.two{background:#7b3cff;top:24%;right:-18%;animation-delay:-6s}
-.orb.three{background:#00d5c0;bottom:-28%;left:26%;animation-delay:-12s}
-@keyframes drift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(6%,8%,0) scale(1.18)}}
+#network,.orbs,.orbs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+to{transform:translate3d(6%,8%,0) scale(1.18)}}
 
 /* layout */
 .wrap,.container{width:min(var(--maxw),92%);margin-inline:auto;position:relative;z-index:1}
@@ -80,8 +75,8 @@ h1 .grad,.grad{background:linear-gradient(100deg,var(--cyan),#b7a8ff 55%,#fff);-
 .stat .label{color:var(--muted);font-size:13px}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 20px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);font-size:14px;font-weight:600;text-decoration:none;cursor:pointer;transition:transform .25s ease,border-color .25s ease,background .25s ease,box-shadow .25s ease,color .25s ease}
-.btn:hover{transform:translateY(-2px);border-color:rgba(110,231,255,.55);box-shadow:0 10px 30px rgba(0,0,0,.35);color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 20px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);font-size:14px;font-weight:600;text-decoration:none;cursor:pointer;transition:border-color .2s ease,background .2s ease,color .2s ease}
+.btn:hover{border-color:rgba(110,231,255,.55);box-shadow:0 10px 30px rgba(0,0,0,.35);color:#fff}
 .btn-primary,.btn.primary{border:0;background:linear-gradient(135deg,var(--cyan),var(--violet));color:#06101a;box-shadow:0 10px 34px rgba(110,231,255,.22)}
 .btn-primary:hover,.btn.primary:hover{color:#06101a;border-color:transparent;filter:saturate(1.05)}
 .btn-secondary,.btn.secondary{background:rgba(255,255,255,.02);color:var(--text)}
@@ -104,11 +99,10 @@ h2{margin:10px 0 12px;font-size:clamp(30px,4vw,46px);letter-spacing:-.035em;line
 /* cards */
 .cards,.grid,.projects,.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
 .projects{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
-.card,.pricing-card{position:relative;padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.025));overflow:hidden;transition:transform .18s ease,border-color .25s ease,box-shadow .25s ease}
+.card,.pricing-card{position:relative;padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.025));overflow:hidden;transition:border-color .2s ease}
 .card::before,.pricing-card::before{content:"";position:absolute;inset:0;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(110,231,255,.16),transparent 60%);opacity:0;transition:opacity .3s ease;pointer-events:none}
-.card:hover,.card:focus-within,.pricing-card:hover,.pricing-card:focus-within{border-color:rgba(110,231,255,.38);box-shadow:0 24px 60px rgba(0,0,0,.42)}
+.card:hover,.card:focus-within,.pricing-card:hover,.pricing-card:focus-within{border-color:rgba(110,231,255,.38)}
 .card:hover::before,.pricing-card:hover::before{opacity:1}
-.tilt{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))}
 .icon,.card-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;margin-bottom:18px;background:rgba(110,231,255,.10);border:1px solid rgba(110,231,255,.22);color:var(--cyan);font-size:20px;line-height:1}
 .card h3,.pricing-card h3{margin:0 0 10px;font-size:1.3rem;letter-spacing:-.01em;color:var(--text)}
 .card p,.pricing-card p,.prose p,.prose li{color:var(--muted)}
@@ -159,17 +153,15 @@ h2{margin:10px 0 12px;font-size:clamp(30px,4vw,46px);letter-spacing:-.035em;line
 .prose a.btn-secondary,.prose a.btn-secondary:visited{color:var(--text)}
 .prose a.btn-secondary:hover,.prose a.btn-secondary:focus-visible{color:#fff}
 
-/* reveal - hidden only when JS is active */
-.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
-.js .reveal.visible{opacity:1;transform:none}
+/* reveal disabled for performance */
+.reveal,.js .reveal,.js .reveal.visible{opacity:1;transform:none}
 
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none !important;transition:none !important}
   .reveal{opacity:1;transform:none}
-  .orb{display:none}
-}
-@media (hover: none), (pointer: coarse){#network{display:none}.orb{filter:blur(50px);animation:none}}
+  }
+@media (hover: none), (pointer: coarse){#network{display:none}}
 @media (max-width:720px){
   .hero{padding-top:64px;min-height:auto}
   .stats{gap:26px}
