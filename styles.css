@@ -159,9 +159,9 @@ h2{margin:10px 0 12px;font-size:clamp(30px,4vw,46px);letter-spacing:-.035em;line
 .prose a.btn-secondary,.prose a.btn-secondary:visited{color:var(--text)}
 .prose a.btn-secondary:hover,.prose a.btn-secondary:focus-visible{color:#fff}
 
-/* reveal */
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
-.reveal.visible{opacity:1;transform:none}
+/* reveal - hidden only when JS is active */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .reveal.visible{opacity:1;transform:none}
 
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}

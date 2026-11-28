@@ -1,5 +1,6 @@
 /* Atlante Systems - lightweight visual effects for demo-style redesign */
 (() => {
+  document.documentElement.classList.add('js');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Canvas particle network
